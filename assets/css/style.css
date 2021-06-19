@@ -26,10 +26,17 @@ li{
     padding: 0 0 0 5rem;
 }
 
-.container1{
+.container1 {
     display: grid;
-    grid-template-columns: 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 0.5rem;
+    justify-content: center;
+    align-content: space-around;
+    align-items: stretch;
+    justify-items: center;    
+    border: 1px solid black;
+    
 }
 
 
