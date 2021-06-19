@@ -26,6 +26,8 @@ li{
     padding: 0 0 0 5rem;
 }
 
+/* code for style of game rules */
+
 .container1 {
     display: grid;
     grid-template-columns: repeat(5, 50px);
@@ -64,6 +66,42 @@ li{
     font-size: 0.5rem;
 }
 
+/* buttons styles  */
+
+.container2{
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 0.5rem 5px;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+button{
+    font-size: 3rem;
+}
+
+.rock-btn{
+
+}
+
+.paper-btn{
+
+}
+
+.scissor-btn{
+
+}
+
+.lizard-btn{
+
+}
+
+.spock-btn{
+
+}
+
+/* number of wins styles */
 
 .numOfWins{
 text-align: center;
@@ -74,4 +112,9 @@ padding: 3rem 0 1rem 0;
 .chooseWins{
 text-align: center;
 font-size: 0.5rem;
+}
+
+.score{
+    margin-top: 5rem;
+    text-align: center;
 }
