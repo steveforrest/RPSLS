@@ -71,10 +71,10 @@ li{
 .container2{
     display: grid;
     grid-template-columns: repeat(5, 50px);
-    grid-template-rows: auto;
+    grid-template-rows: auto auto 25px auto;
     grid-gap: 0.5rem 5px;
     justify-content: space-evenly;
-    margin: 3rem;
+    margin: 3rem 3rem 0;
 }
 
 button{
@@ -86,7 +86,11 @@ grid-column-start: 3;
 grid-column-end: 4;
 grid-row-start: 1;
 grid-row-end: 2;
-color: orange;
+color: rgba(0, 0, 255, 1);
+}
+button :hover{
+    color: black;
+    /*color: rgba(255, 165, 0, 0.8);*/
 }
 
 .paper-btn{
@@ -94,7 +98,7 @@ color: orange;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    color: green;
+    color: rgba(0, 128, 0, 1);;
 }
 
 .scissor-btn{
@@ -102,23 +106,23 @@ color: orange;
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 3;
-    color: yellow;
+    color: rgb(255, 255, 0, 1);;
 }
 
 .lizard-btn{
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    color: red;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    color: rgba(255, 0, 0, 1);;
 }
 
 .spock-btn{
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    color: blue;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    color: rgba(255, 165, 0, 1);
 }
 
 /* number of wins styles */
@@ -132,6 +136,11 @@ padding: 3rem 0 1rem 0;
 .chooseWins{
 text-align: center;
 font-size: 0.5rem;
+}
+
+.scores{
+display: flex;
+
 }
 
 .score{
