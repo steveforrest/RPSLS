@@ -88,9 +88,8 @@ grid-row-start: 1;
 grid-row-end: 2;
 color: rgba(0, 0, 255, 1);
 }
-button :hover{
-    color: black;
-    /*color: rgba(255, 165, 0, 0.8);*/
+.rock-btn:hover{
+    color: rgba(0, 0, 255, 0.6)
 }
 
 .paper-btn{
@@ -101,12 +100,20 @@ button :hover{
     color: rgba(0, 128, 0, 1);;
 }
 
+.paper-btn:hover{
+    color: rgba(0, 128, 0, 0.6);;
+}
+
 .scissor-btn{
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 3;
-    color: rgb(255, 255, 0, 1);;
+    color: rgb(255, 255, 0, 1);
+}
+
+.scissor-btn:hover{
+    color: rgb(255, 255, 0, 0.6);
 }
 
 .lizard-btn{
@@ -117,12 +124,21 @@ button :hover{
     color: rgba(255, 0, 0, 1);;
 }
 
+.lizard-btn:hover{
+    color: rgba(255, 0, 0, 0.6);;
+}
+
 .spock-btn{
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 4;
     grid-row-end: 5;
     color: rgba(255, 165, 0, 1);
+}
+
+.spock-btn:hover{
+    color: rgba(255, 165, 0, 0.6);
+}
 }
 
 /* number of wins styles */
@@ -140,7 +156,6 @@ font-size: 0.5rem;
 
 .scores{
 display: flex;
-
 }
 
 .score{
