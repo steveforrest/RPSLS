@@ -1,2 +1,23 @@
-console.log('hi there');
+function runGame(){
 
+}
+
+function takePlayerChoice(){
+
+}
+
+function generateComputerChoice(){
+
+}
+
+function decideWinner(){
+
+}
+
+function incrementScore(){
+    
+}
+
+function incrementLoss(){
+
+}
