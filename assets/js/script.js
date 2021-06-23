@@ -42,20 +42,45 @@ function generateComputerChoice() {
         return "Paper";
     } else if (comChoice === 3) {
         return "Scissors";
-    } else if (comChoice === 4){
+    } else if (comChoice === 4) {
         return "Lizard";
-    } else if (comChoice === 5){
-    return "Spock";
-}else{
-    return "error";
-}
+    } else if (comChoice === 5) {
+        return "Spock";
+    } else {
+        return "error";
+    }
 }
 
 console.log(generateComputerChoice())
 
-function decideWinner() {
+/**
+ * Comapres the user choice from the buttons to the randomly generated computers choice
+ */
 
+function decideWinner(userChoice) {
+
+    if (userChoice === comChoice) {
+        console.log("game drew");
+    } else {
+        if (userChoice === "Rock" && comChoice === "Scissor" || "Lizard") {
+            console.log("you win")
+        } else if (userChoice === "Paper" && comChoice === "Rock" || "Spock") {
+            console.log("you win")
+        } else if (userChoice === "Scissors" && comChoice === "Paper" || "Lizard") {
+            console.log("you win")
+
+        } else if (userChoice === "Lizard" && comChoice === "Spock" || "Paper") {
+            console.log("you win")
+
+        } else if (userChoice === "Spock" && comChoice === "Scissor" || "Rock") {
+            console.log("you win")
+
+        } else {
+            console.log("you lose")
+        }
+    }
 }
+decideWinner()
 
 function incrementScore() {
 
