@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 })
-
+*/
 function runGame() {
 
 }
@@ -21,10 +21,23 @@ function runGame() {
 
 function takePlayerChoice() {
 
+    /* document.getElementsByTagName("button").addEventListener("click", function() {*/
+        let buttons = document.getElementsByTagName("button");
 
+        for (let button of buttons) {
+            button.addEventListener("click", function () {
+                if (this.getAttribute("data-type") === "submit") {
+                    alert(" you clicked submit");
+                } else {
+                    return this.getAttribute("data-type");
+                   
+                }
+            })
+        }
+                
 }
+console.log(takePlayerChoice())
 
-takePlayerChoice()
 
 /**
  * Generates a number between 1 and 5 and asigns it to a computer choice for the game
@@ -51,34 +64,35 @@ function generateComputerChoice() {
     }
 }
 
-console.log(generateComputerChoice())
 
 /**
  * Comapres the user choice from the buttons to the randomly generated computers choice
  */
 
-function decideWinner(userChoice) {
+function decideWinner() {
+
+    comChoice = generateComputerChoice();
+    userChoice = takePlayerChoice();
 
     if (userChoice === comChoice) {
         console.log("game drew");
     } else {
-        if (userChoice === "Rock" && comChoice === "Scissor" || "Lizard") {
+        if (userChoice === "Rock" && (comChoice == "Scissors" || comChoice == "Lizard")) {
             console.log("you win")
-        } else if (userChoice === "Paper" && comChoice === "Rock" || "Spock") {
+        } else if (userChoice === "Paper" && (comChoice == "Rock" || comChoice == "Spock")) {
             console.log("you win")
-        } else if (userChoice === "Scissors" && comChoice === "Paper" || "Lizard") {
+        } else if (userChoice === "Scissors" && (comChoice == "Paper" || comChoice == "Lizard")) {
             console.log("you win")
-
-        } else if (userChoice === "Lizard" && comChoice === "Spock" || "Paper") {
+        } else if (userChoice === "Lizard" && (comChoice == "Spock" || comChoice == "Paper")) {
             console.log("you win")
-
-        } else if (userChoice === "Spock" && comChoice === "Scissor" || "Rock") {
+        } else if (userChoice === "Spock" && (comChoice == "Scissors" || Comment == "Rock")) {
             console.log("you win")
-
         } else {
             console.log("you lose")
         }
     }
+        console.log(userChoice);
+        console.log(comChoice);
 }
 decideWinner()
 

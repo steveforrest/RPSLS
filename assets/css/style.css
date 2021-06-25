@@ -83,7 +83,7 @@ li{
 
 /* buttons styles  */
 
-.container2{
+#container2{
     display: grid;
     grid-template-columns: repeat(5, 50px);
     grid-template-rows: auto auto 25px auto;
@@ -164,7 +164,7 @@ font-size: 0.75rem;
 padding: 3rem 0;
 }
 
-.chooseWins{
+#chooseWins{
 text-align: center;
 font-size: 0.5rem;
 }
