@@ -1,42 +1,8 @@
-/* document.addEventListener("DOMContentLoaded", function () {
-    let buttons = document.getElementsByTagName("button");
 
-    for (let button of buttons) {
-        button.addEventListener("click", function () {
-            if (this.getAttribute("data-type") === "submit") {
-                alert(" you clicked submit");
-            } else {
-                let userChoice = this.getAttribute("data-type");
-                alert(`you clicked ${userChoice}`);
-            }
-        })
-    }
-})
-*/
 function runGame() {
 
 }
 
-/**Users choice is taken */
-
-function takePlayerChoice() {
-
-    /* document.getElementsByTagName("button").addEventListener("click", function() {*/
-        let buttons = document.getElementsByTagName("button");
-
-        for (let button of buttons) {
-            button.addEventListener("click", function () {
-                if (this.getAttribute("data-type") === "submit") {
-                    alert(" you clicked submit");
-                } else {
-                    return this.getAttribute("data-type");
-                   
-                }
-            })
-        }
-                
-}
-console.log(takePlayerChoice())
 
 
 /**
@@ -69,10 +35,9 @@ function generateComputerChoice() {
  * Comapres the user choice from the buttons to the randomly generated computers choice
  */
 
-function decideWinner() {
+function decideWinner(userChoice) {
 
     comChoice = generateComputerChoice();
-    userChoice = takePlayerChoice();
 
     if (userChoice === comChoice) {
         console.log("game drew");
@@ -91,6 +56,7 @@ function decideWinner() {
             console.log("you lose")
         }
     }
+
         console.log(userChoice);
         console.log(comChoice);
 }
