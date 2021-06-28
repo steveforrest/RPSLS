@@ -1,4 +1,3 @@
-
 function runGame() {
 
 }
@@ -44,28 +43,47 @@ function decideWinner(userChoice) {
     } else {
         if (userChoice === "Rock" && (comChoice == "Scissors" || comChoice == "Lizard")) {
             console.log("you win")
+            incrementScore();
         } else if (userChoice === "Paper" && (comChoice == "Rock" || comChoice == "Spock")) {
             console.log("you win")
+            incrementScore();
         } else if (userChoice === "Scissors" && (comChoice == "Paper" || comChoice == "Lizard")) {
             console.log("you win")
+            incrementScore();
         } else if (userChoice === "Lizard" && (comChoice == "Spock" || comChoice == "Paper")) {
             console.log("you win")
+            incrementScore();
         } else if (userChoice === "Spock" && (comChoice == "Scissors" || Comment == "Rock")) {
             console.log("you win")
+            incrementScore();
         } else {
             console.log("you lose")
+            incrementLoss();
         }
     }
 
-        console.log(userChoice);
-        console.log(comChoice);
+    console.log(userChoice);
+    console.log(comChoice);
 }
 decideWinner()
 
+
+/**
+ * gets current score from the DOM and increases it by one
+ */
+
 function incrementScore() {
 
+    let previousScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++previousScore;
 }
+
+/**
+ * gets current loss from the DOM and increases it by one
+ */
 
 function incrementLoss() {
 
+    let previousLoss = parseInt(document.getElementById("loss").innerText);
+    document.getElementById("loss").innerText = ++previousLoss;
 }
