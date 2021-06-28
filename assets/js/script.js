@@ -94,5 +94,5 @@ win()
 
 
 /**
- * show user choice and computer choice with result
+ * to allow to hide and show sections
  */
