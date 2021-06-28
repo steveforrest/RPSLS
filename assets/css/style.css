@@ -11,7 +11,7 @@ header {
 
 footer {
     background: rgba(0, 160, 255);
-    padding: 3rem 0.5rem;
+    padding: 3rem 0;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -172,18 +172,22 @@ li {
 /* number of wins styles */
 
 #numOfWins {
-    text-align: center;
+        text-align: center;
     font-size: 0.75rem;
     padding: 3rem 0;
 }
 
 #chooseWins {
+    display: none;
     text-align: center;
     font-size: 0.5rem;
 }
 
+/*Score for player and computer*/
+
 #scores {
-    display: flex;
+    /*display: flex;*/
+    display: none;
     margin-top: 3rem;
     justify-content: space-evenly;
 }
@@ -200,14 +204,21 @@ li {
 .gameButton{
     width: 100px;
     height: 50px;
+    background-color: rgba(0, 160, 255);
+    color: white;
+    border-radius:  10px;
+}
+
+.gameButton:hover{
+back
 }
 
 #rules{
     position: absolute;
-    bottom: 20 px;
+    bottom: 100px;
     right: 20px;
     font-size: 25px;
-}
+    }
 
 #playGame{
     display: flex;
