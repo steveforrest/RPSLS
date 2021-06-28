@@ -4,39 +4,40 @@
     margin: 0;
 }
 
-header{
+header {
     background: rgba(0, 160, 255);
     padding: 3rem 0;
 }
 
-footer{
+footer {
     background: rgba(0, 160, 255);
     padding: 3rem 0.5rem;
-    position:absolute;
-    bottom:0;
-    width:100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
-#gameDiscription{
+#gameDiscription {
     padding: 3rem 2rem;
 }
 
-h1{
+h1 {
     text-align: center;
     color: white
 }
 
-p{
+p {
     font-size: 0.75rem;
     text-align: center;
     padding: 1rem;
 }
 
-ul{
+ul {
     padding: 1rem 0;
-        
+
 }
-li{
+
+li {
     font-size: 0.5rem;
     padding: 0 0 0 5rem;
 }
@@ -47,7 +48,7 @@ li{
     display: flex;
     padding: 2rem;
     justify-content: center;
-   }
+}
 
 .container1 {
     display: grid;
@@ -55,7 +56,7 @@ li{
     grid-template-rows: repeat(2, auto);
     grid-gap: 0.5rem 5px;
     justify-content: space-evenly;
-   }
+}
 
 .item-border1 {
     border: 3px solid yellow;
@@ -89,7 +90,7 @@ li{
 
 /* buttons styles  */
 
-#container2{
+#container2 {
     display: grid;
     grid-template-columns: repeat(5, 50px);
     grid-template-rows: auto auto 25px auto;
@@ -98,34 +99,37 @@ li{
     margin: 3rem 3rem 0;
 }
 
-button{
+button {
     font-size: 3rem;
 }
 
-.rock-btn{
-grid-column-start: 3;
-grid-column-end: 4;
-grid-row-start: 1;
-grid-row-end: 2;
-color: rgba(0, 0, 255, 1);
+.rock-btn {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    color: rgba(0, 0, 255, 1);
 }
-.rock-btn:hover{
+
+.rock-btn:hover {
     color: rgba(0, 0, 255, 0.6)
 }
 
-.paper-btn{
+.paper-btn {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    color: rgba(0, 128, 0, 1);;
+    color: rgba(0, 128, 0, 1);
+    ;
 }
 
-.paper-btn:hover{
-    color: rgba(0, 128, 0, 0.6);;
+.paper-btn:hover {
+    color: rgba(0, 128, 0, 0.6);
+    ;
 }
 
-.scissor-btn{
+.scissor-btn {
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 2;
@@ -133,23 +137,25 @@ color: rgba(0, 0, 255, 1);
     color: rgb(255, 255, 0, 1);
 }
 
-.scissor-btn:hover{
+.scissor-btn:hover {
     color: rgb(255, 255, 0, 0.6);
 }
 
-.lizard-btn{
+.lizard-btn {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
-    color: rgba(255, 0, 0, 1);;
+    color: rgba(255, 0, 0, 1);
+    ;
 }
 
-.lizard-btn:hover{
-    color: rgba(255, 0, 0, 0.6);;
+.lizard-btn:hover {
+    color: rgba(255, 0, 0, 0.6);
+    ;
 }
 
-.spock-btn{
+.spock-btn {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 4;
@@ -157,34 +163,33 @@ color: rgba(0, 0, 255, 1);
     color: rgba(255, 165, 0, 1);
 }
 
-.spock-btn:hover{
+.spock-btn:hover {
     color: rgba(255, 165, 0, 0.6);
 }
 }
 
 /* number of wins styles */
 
-#numOfWins{
-text-align: center;
-font-size: 0.75rem;
-padding: 3rem 0;
+#numOfWins {
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 3rem 0;
 }
 
-#chooseWins{
-text-align: center;
-font-size: 0.5rem;
+#chooseWins {
+    text-align: center;
+    font-size: 0.5rem;
 }
 
-.scores{
-display: flex;
-margin-top: 3rem;
-justify-content: space-evenly;
+.scores {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-evenly;
 }
 
-.score{
-    
-}
-
-.loss{
-
+.scores>p {
+    font-size: 2rem;
+    color: white;
+    background-color: brown;
+    border-radius: 5px;
 }

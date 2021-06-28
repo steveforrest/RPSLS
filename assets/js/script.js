@@ -1,9 +1,3 @@
-function runGame() {
-
-}
-
-
-
 /**
  * Generates a number between 1 and 5 and asigns it to a computer choice for the game
  * @returns 
@@ -65,7 +59,7 @@ function decideWinner(userChoice) {
     console.log(userChoice);
     console.log(comChoice);
 }
-decideWinner()
+
 
 
 /**
@@ -87,3 +81,18 @@ function incrementLoss() {
     let previousLoss = parseInt(document.getElementById("loss").innerText);
     document.getElementById("loss").innerText = ++previousLoss;
 }
+
+/**
+ * Game checks game win/loss limit is not reached
+ */
+
+function win() {
+    let win2Win = parseInt(document.getElementsByTagName("label"))
+    console.log(win2Win)
+}
+win()
+
+
+/**
+ * show user choice and computer choice with result
+ */
