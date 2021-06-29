@@ -15,6 +15,10 @@
         <h1>Rock, Paper, Scissors, Lizard, Spock Game</h1>
     </header>
 
+    <section class="gameButtonFlex">
+        <button class="gameButton" id="playGame">Play Game</button>
+        <button class="gameButton" onclick="showRules()"  id="rules">Rules</button>
+    </section>
 
     <section id="rulesImg">
         <img src="assets/images/1e9ae22826a47a2d2e9f0e8f0f0cdf21a8479715 (1).jpeg" alt="">
@@ -48,10 +52,7 @@
         </iframe>
     </section>
 
-    <section id="playGameButton">
-        <button class="gameButton" id="playGame">Play Game</button>
-    </section>
-
+  
 
     <section id="chooseWins" id="howManyGames">
     <p id="numOfWins">How many games do you need to win to be overall winner?</p>
@@ -75,9 +76,6 @@
         <p>Computer: <span id="loss"> 0</span></p>
     </section>
 
-    <section>
-        <button onclick="showRules()" class="gameButton" id="rules">Rules</button>
-    </section>
 
 
     <script src="assets/js/script.js"></script>

@@ -208,6 +208,11 @@ li {
 
 /* Buttons for play game and show rules */
 
+.gameButtonFlex{
+margin: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
 .gameButton{
     width: 100px;
     height: 50px;
@@ -222,7 +227,7 @@ li {
 back
 }
 
-/*  Rules image that can be toggled when clicking the rules button */
+/*  Rules image and video that can be toggled when clicking the rules button */
 
 #rules{
     display: flex;
@@ -235,7 +240,6 @@ back
 #rulesImg{
     display: grid;
     justify-content: center;
-    z-index: 2;
 }
 
 
