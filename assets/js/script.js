@@ -102,6 +102,7 @@ function showRules() {
     // this is the element
     let showImg = document.getElementById("rulesImg");
     let showVideo = document.getElementById("video");
+    let hero = document.getElementById("hero-img");
 
     // this gets the style value
     let startingStateImg = getComputedStyle(showImg).getPropertyValue('display');
@@ -111,10 +112,12 @@ function showRules() {
         // change the element style
         showImg.style.display = "none";
         showVideo.style.display = "none";
+        hero.style.display = "flex";
     } else {
         // change the element style
         showImg.style.display = "grid";
         showVideo.style.display = "flex";
+        hero.style.display = "none";
     }
 
    

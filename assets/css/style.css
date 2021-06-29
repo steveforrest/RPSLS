@@ -10,6 +10,7 @@ header {
 }
 
 body{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -18,6 +19,7 @@ footer {
     background: rgba(0, 160, 255);
     padding: 3rem 0;
     width: 100%;
+    margin-top: auto;
 }
 
 #gameDiscription {
@@ -261,4 +263,7 @@ li {
 #hero-img{
     display: flex;
     justify-content: center;
+    margin: 30px;
+    height: 600px;
+    /*width: 450px;*/
 }
