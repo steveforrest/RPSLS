@@ -122,3 +122,25 @@ function showRules() {
 
    
 }
+/**
+ * If play game is clicked hero images is hidden and the game starts
+ * scores are shown as well as buttons and selector for how many games to be played
+ */
+
+
+function playGame(){
+    let hero = document.getElementById("hero-img");
+    let numberOfWins = document.getElementById("chooseWins");
+
+    let startingStateHero = getComputedStyle(hero).getPropertyValue('display');
+
+    if (startingStateHero == "flex") {
+        // change the element style
+        hero.style.display = "none";
+        numberOfWins.style.display = "grid";
+
+    } else {
+       console.log("already playing")
+    }
+
+}

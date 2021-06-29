@@ -9,7 +9,7 @@ header {
     padding: 3rem 0;
 }
 
-body{
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -178,19 +178,18 @@ li {
 
 /* number of wins styles */
 
+#choose-wins {
+    display: none;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-evenly;
+    font-size: 0.5rem;
+}
 #numOfWins {
     text-align: center;
     font-size: 0.75rem;
     padding: 3rem 0;
 }
-
-#chooseWins {
-    display: none;
-    text-align: center;
-    font-size: 0.5rem;
-}
-
-
 
 
 /*Score for player and computer*/
@@ -260,10 +259,10 @@ li {
 
 /*Heroimage*/
 
-#hero-img{
+#hero-img {
     display: flex;
     justify-content: center;
     margin: 30px;
     height: 600px;
-    /*width: 450px;*/
+   
 }
