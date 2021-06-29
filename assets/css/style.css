@@ -9,11 +9,14 @@ header {
     padding: 3rem 0;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     background: rgba(0, 160, 255);
     padding: 3rem 0;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
@@ -44,11 +47,9 @@ li {
 
 /* code for style of game rules */
 
-.container0 {
- 
-}
+.container0 {}
 
-#video{
+#video {
     display: none;
     padding: 2rem;
     justify-content: center;
@@ -176,7 +177,7 @@ li {
 /* number of wins styles */
 
 #numOfWins {
-        text-align: center;
+    text-align: center;
     font-size: 0.75rem;
     padding: 3rem 0;
 }
@@ -208,49 +209,57 @@ li {
 
 /* Buttons for play game and show rules */
 
-.gameButtonFlex{
-margin: 3rem;
+.gameButtonFlex {
+    margin: 3rem;
     display: flex;
     justify-content: space-evenly;
 }
-.gameButton{
+
+.gameButton {
     width: 100px;
     height: 50px;
     background-color: rgba(0, 160, 255);
     color: white;
-    border-radius:  10px;
+    border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.gameButton:hover{
-back
+.gameButton:hover {
+    back
 }
 
 /*  Rules image and video that can be toggled when clicking the rules button */
 
-#rules{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-
-
-
-#rulesImg{
-    display: grid;
-    justify-content: center;
-}
-
-
-#playGame{
+#rules {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#playGameButton{
+
+
+#rulesImg {
+    display: none;
+    justify-content: center;
+}
+
+
+#playGame {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#playGameButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Heroimage*/
+
+#hero-img{
+    display: flex;
+    justify-content: center;
 }

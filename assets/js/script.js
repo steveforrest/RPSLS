@@ -117,17 +117,5 @@ function showRules() {
         showVideo.style.display = "flex";
     }
 
-    // let startingStateVideo = getComputedStyle(showVideo).getPropertyValue('display');
-
-     // check the style value
-    // if (startingStateVideo == "flex") {
-    //     // change the element style
-    //     showVideo.style.display = "none";
-    // } else {
-    //     // change the element style
-    //     showVideo.style.display = "flex";
-    // }
-
+   
 }
-
-showRules()
