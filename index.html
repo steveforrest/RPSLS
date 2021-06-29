@@ -15,11 +15,16 @@
         <h1>Rock, Paper, Scissors, Lizard, Spock Game</h1>
     </header>
 
+
+    <section>
+        <img id="rulesImg" src="assets/images/1e9ae22826a47a2d2e9f0e8f0f0cdf21a8479715 (1).jpeg" alt="">
+    </section>
     <section id="hideContainer1">
 
         <p id="gameDiscription">In This game it is much like the original but with a few ways to prevent the inevitable
             back and forth</p>
         <div class="container1">
+            
             <p class="item-border3">Papoer disproves Spock</p>
             <p class="item-border4">Lizard poisons Spock</p>
             <p class="item-border5">Spock smashes scissors</p>
@@ -52,7 +57,7 @@
     <p id="numOfWins">How many games do you need to win to be overall winner?</p>
 
          <label for="select1"><input id="select1" type="radio" name="wins" checked>One</label>
-        <label for="select2"><input id="select2" type="radio" name="wins">Two</label>
+        <label for="select2"><input id="select2" class="howManyWins" type="radio" name="wins">Two</label>
         <label for="select3"><input id="select3" type="radio" name="wins">Three</label>
     </section>
 
@@ -71,7 +76,7 @@
     </section>
 
     <section>
-        <button class="gameButton" id="rules">Rules</button>
+        <button onclick="showRules()" class="gameButton" id="rules">Rules</button>
     </section>
 
 

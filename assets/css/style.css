@@ -183,6 +183,9 @@ li {
     font-size: 0.5rem;
 }
 
+
+
+
 /*Score for player and computer*/
 
 #scores {
@@ -207,18 +210,28 @@ li {
     background-color: rgba(0, 160, 255);
     color: white;
     border-radius:  10px;
+    display: block;
 }
 
 .gameButton:hover{
 back
 }
 
+/*  Rules image that can be toggled when clicking the rules button */
+
 #rules{
     position: absolute;
     bottom: 100px;
-    right: 20px;
+    right: 40px;
     font-size: 25px;
     }
+
+
+
+#rulesImg{
+    display: none;
+}
+
 
 #playGame{
     display: flex;
