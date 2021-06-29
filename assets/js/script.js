@@ -2,6 +2,7 @@
  * Generates a number between 1 and 5 and asigns it to a computer choice for the game
  * @returns 
  */
+ setTimeout(() => document.getElementById("video").style.display = "none", 500);
 
 
 function generateComputerChoice() {
@@ -97,15 +98,36 @@ win()
  * to allow to hide and show sections
  */
 
-function showRules(){
+function showRules() {
+    // this is the element
     let showImg = document.getElementById("rulesImg");
-    if(showImg.style.display == "none"){
-        showImg.style.display == "block";
-    }else{
-        showImg.style.display == "none";
+    let showVideo = document.getElementById("video");
+
+    // this gets the style value
+    let startingStateImg = getComputedStyle(showImg).getPropertyValue('display');
+
+    // check the style value
+    if (startingStateImg == "grid") {
+        // change the element style
+        showImg.style.display = "none";
+        showVideo.style.display = "none";
+    } else {
+        // change the element style
+        showImg.style.display = "grid";
+        showVideo.style.display = "flex";
     }
-    
-    console.log(showImg);
+
+    // let startingStateVideo = getComputedStyle(showVideo).getPropertyValue('display');
+
+     // check the style value
+    // if (startingStateVideo == "flex") {
+    //     // change the element style
+    //     showVideo.style.display = "none";
+    // } else {
+    //     // change the element style
+    //     showVideo.style.display = "flex";
+    // }
+
 }
 
 showRules()

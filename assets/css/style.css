@@ -45,7 +45,11 @@ li {
 /* code for style of game rules */
 
 .container0 {
-    display: flex;
+ 
+}
+
+#video{
+    display: none;
     padding: 2rem;
     justify-content: center;
 }
@@ -210,7 +214,8 @@ li {
     background-color: rgba(0, 160, 255);
     color: white;
     border-radius:  10px;
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .gameButton:hover{
@@ -220,16 +225,17 @@ back
 /*  Rules image that can be toggled when clicking the rules button */
 
 #rules{
-    position: absolute;
-    bottom: 100px;
-    right: 40px;
-    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 
 
 
 #rulesImg{
-    display: none;
+    display: grid;
+    justify-content: center;
+    z-index: 2;
 }
 
 
