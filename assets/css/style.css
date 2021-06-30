@@ -28,7 +28,7 @@ footer {
 
 h1 {
     text-align: center;
-    color: white
+    color: white;
 }
 
 p {
@@ -129,12 +129,12 @@ li {
     grid-row-start: 2;
     grid-row-end: 3;
     color: rgba(0, 128, 0, 1);
-    ;
+    
 }
 
 .paper-btn:hover {
     color: rgba(0, 128, 0, 0.6);
-    ;
+    
 }
 
 .scissor-btn {
@@ -155,12 +155,12 @@ li {
     grid-row-start: 4;
     grid-row-end: 5;
     color: rgba(255, 0, 0, 1);
-    ;
+    
 }
 
 .lizard-btn:hover {
     color: rgba(255, 0, 0, 0.6);
-    ;
+    
 }
 
 .spock-btn {
@@ -174,7 +174,7 @@ li {
 .spock-btn:hover {
     color: rgba(255, 165, 0, 0.6);
 }
-}
+
 
 /* number of wins styles */
 
@@ -227,7 +227,7 @@ li {
 }
 
 .gameButton:hover {
-    back
+    background-color: rgba(0, 20, 255);
 }
 
 /*  Rules image and video that can be toggled when clicking the rules button */
