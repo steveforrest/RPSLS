@@ -178,7 +178,7 @@ li {
 
 /* number of wins styles */
 
-#choose-wins {
+#chooseWins {
     display: none;
     grid-template-columns: repeat(3, 50px);
     grid-template-rows: repeat(2, auto);

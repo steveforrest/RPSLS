@@ -131,6 +131,8 @@ function showRules() {
 function playGame(){
     let hero = document.getElementById("hero-img");
     let numberOfWins = document.getElementById("chooseWins");
+    let gameButtons = document.getElementById("container2");
+    let scoreBoard = document.getElementById("scores");
 
     let startingStateHero = getComputedStyle(hero).getPropertyValue('display');
 
@@ -138,6 +140,8 @@ function playGame(){
         // change the element style
         hero.style.display = "none";
         numberOfWins.style.display = "grid";
+        gameButtons.style.display = "grid";
+
 
     } else {
        console.log("already playing")
