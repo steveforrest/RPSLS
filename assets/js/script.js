@@ -98,7 +98,7 @@ win()
  * to allow to hide and show sections
  */
 
-function showRules() {
+/*function showRules() {
     // this is the element
     let showImg = document.getElementById("rulesImg");
     let showVideo = document.getElementById("video");
@@ -119,7 +119,7 @@ function showRules() {
         showVideo.style.display = "flex";
         hero.style.display = "none";
     }
-
+*/
    
 }
 /**
@@ -141,6 +141,7 @@ function playGame(){
         hero.style.display = "none";
         numberOfWins.style.display = "grid";
         gameButtons.style.display = "grid";
+        scoreBoard.style.display = "flex";
 
 
     } else {

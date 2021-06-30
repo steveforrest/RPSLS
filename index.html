@@ -15,18 +15,41 @@
         <h1>Rock, Paper, Scissors, Lizard, Spock Game</h1>
     </header>
 
+
+
     <section class="gameButtonFlex">
-        <button class="gameButton" onclick="playGame()" id="playGame">Play Game</button>
-        <button class="gameButton" onclick="showRules()" id="rules">Rules</button>
+        <button class="gameButton" onclick="playGame()" id="rules">Play Game</button>
+       <!-- <button class="gameButton" onclick="showRules()" id="rules">Rules</button>-->
+
+        <button class="gameButton" id="rules modal-button">Rules</button>
+    </section>
+
+ 
+    <!-- modal content to be used with rules button-->
+
+    <section id="rules-modal" class="modal">
+        <div class="rules-modal-content">
+
+            <span class="close-button">&times;</span>
+            <section id="rulesImg">
+                <img src="assets/images/1e9ae22826a47a2d2e9f0e8f0f0cdf21a8479715 (1).jpeg" alt="">
+            </section>
+
+            <!-- Video to explain rules-->
+            <section id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/x5Q6-wMx-K8?start=7"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </iframe>
+            </section>
+        </div>
     </section>
 
     <section id="hero-img">
         <img src="assets/images/RPSLSHeroImage.jpg" alt="">
     </section>
 
-    <section id="rulesImg">
-        <img src="assets/images/1e9ae22826a47a2d2e9f0e8f0f0cdf21a8479715 (1).jpeg" alt="">
-    </section>
 
     <section id="hideContainer1">
         <div class="container1">
@@ -45,23 +68,15 @@
     </section>
 
 
-    <!-- <video src=""></video>-->
-    <section class="container0" id="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/x5Q6-wMx-K8?start=7"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </iframe>
-    </section>
 
 
 
     <section id="chooseWins">
-        <p id="numOfWins">How many games do you need to win to be overall winner?</p>
+        <p id="numOfWins grid-item-1">How many games do you need to win to be overall winner?</p>
 
-        <label for="select1"><input id="select1" type="radio" name="wins" checked>One</label>
-        <label for="select2"><input id="select2" class="howManyWins" type="radio" name="wins">Two</label>
-        <label for="select3"><input id="select3" type="radio" name="wins">Three</label>
+        <label for="select1"><input id="select1 grid-item-2" type="radio" name="wins" checked>One</label>
+        <label for="select2"><input id="select2 grid-item-3" class="howManyWins" type="radio" name="wins">Two</label>
+        <label for="select3"><input id="select3 grid-item-4" type="radio" name="wins">Three</label>
     </section>
 
     <section id="container2">
