@@ -2,7 +2,7 @@
  * Generates a number between 1 and 5 and asigns it to a computer choice for the game
  * @returns 
  */
- setTimeout(() => document.getElementById("video").style.display = "none", 500);
+setTimeout(() => document.getElementById("video").style.display = "none", 500);
 
 
 function generateComputerChoice() {
@@ -98,37 +98,70 @@ win()
  * to allow to hide and show sections
  */
 
-/*function showRules() {
+function showRules() {
+
+
+    //get modal element
+    let modal = document.getElementById("rules-modal");
+    //get open modal button
+    // let RulesButton = document.getElementsByID("modal-button");
+    //get close modal button
+    let closeModal = document.getElementById("closeModal");
+
+    // get starting state of modal
+    let startingStateModal = getComputedStyle(modal).getPropertyValue('display');
+
+    modal.style.display = "flex";
+
     // this is the element
-    let showImg = document.getElementById("rulesImg");
-    let showVideo = document.getElementById("video");
-    let hero = document.getElementById("hero-img");
+    /*    let showImg = document.getElementById("rulesImg");
+        let showVideo = document.getElementById("video");
+        let hero = document.getElementById("hero-img");
 
-    // this gets the style value
-    let startingStateImg = getComputedStyle(showImg).getPropertyValue('display');
+        // this gets the style value
+        let startingStateImg = getComputedStyle(showImg).getPropertyValue('display');
 
-    // check the style value
-    if (startingStateImg == "grid") {
-        // change the element style
-        showImg.style.display = "none";
-        showVideo.style.display = "none";
-        hero.style.display = "flex";
-    } else {
-        // change the element style
-        showImg.style.display = "grid";
-        showVideo.style.display = "flex";
-        hero.style.display = "none";
-    }
-*/
-   
+        // check the style value
+        if (startingStateImg == "grid") {
+            // change the element style
+            showImg.style.display = "none";
+            showVideo.style.display = "none";
+            hero.style.display = "flex";
+        } else {
+            // change the element style
+            showImg.style.display = "grid";
+            showVideo.style.display = "flex";
+            hero.style.display = "none";
+
+ 
 }
+*/
+
+}
+
+function hideRules() {
+    //get modal element
+    let modal = document.getElementById("rules-modal");
+    //get open modal button
+    // let RulesButton = document.getElementsByID("modal-button");
+    //get close modal button
+    let closeModal = document.getElementById("closeModal");
+    // get starting state of modal
+    let startingStateModal = getComputedStyle(modal).getPropertyValue('display');
+
+    modal.style.display = "none";
+}
+
+
+
+
 /**
  * If play game is clicked hero images is hidden and the game starts
  * scores are shown as well as buttons and selector for how many games to be played
  */
 
 
-function playGame(){
+function playGame() {
     let hero = document.getElementById("hero-img");
     let numberOfWins = document.getElementById("chooseWins");
     let gameButtons = document.getElementById("container2");
@@ -145,7 +178,7 @@ function playGame(){
 
 
     } else {
-       console.log("already playing")
+        console.log("already playing")
     }
 
 }

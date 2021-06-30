@@ -254,7 +254,7 @@ li {
 
 /*  Rules image and video that can be toggled when clicking the rules button */
 
-#rules {
+.rules {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -290,6 +290,7 @@ li {
     width: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4) ;
+    overflow:auto;
     
 }
 
@@ -304,12 +305,6 @@ li {
 /*play game brings up the game icons controls and score */
 
 #playGame {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#playGameButton {
     display: flex;
     justify-content: center;
     align-items: center;
