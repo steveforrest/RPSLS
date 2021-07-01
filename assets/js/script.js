@@ -1,3 +1,11 @@
+
+// get close button
+var closeModal = document.getElementsByClassName('close-button')[0];
+
+let startingStateModal = getComputedStyle(closeModal).getPropertyValue('display');
+//listen for click
+closeModal.addEventListener('click', closeModal);
+console.log(closeModal)
 /**
  * Generates a number between 1 and 5 and asigns it to a computer choice for the game
  * @returns 
@@ -120,7 +128,7 @@ function showRules() {
 
 }
 
-function hideRules() {
+/*function hideRules() {
     //get modal element
     let modal = document.getElementById("rules-modal");
     //get open modal button
@@ -131,9 +139,11 @@ function hideRules() {
     let startingStateModal = getComputedStyle(modal).getPropertyValue('display');
 
     modal.style.display = "none";
+}*/
+
+function closeModal(){
+    modal.style.display = 'none';
 }
-
-
 
 
 /**
