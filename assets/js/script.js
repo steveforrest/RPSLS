@@ -95,7 +95,7 @@ win()
 
 
 /**
- * to allow to hide and show sections
+ * to allow to show rules
  */
 
 function showRules() {
@@ -113,29 +113,10 @@ function showRules() {
 
     modal.style.display = "flex";
 
-    // this is the element
-    /*    let showImg = document.getElementById("rulesImg");
-        let showVideo = document.getElementById("video");
-        let hero = document.getElementById("hero-img");
+/**
+ * to allow to hide rules
+ */
 
-        // this gets the style value
-        let startingStateImg = getComputedStyle(showImg).getPropertyValue('display');
-
-        // check the style value
-        if (startingStateImg == "grid") {
-            // change the element style
-            showImg.style.display = "none";
-            showVideo.style.display = "none";
-            hero.style.display = "flex";
-        } else {
-            // change the element style
-            showImg.style.display = "grid";
-            showVideo.style.display = "flex";
-            hero.style.display = "none";
-
- 
-}
-*/
 
 }
 
@@ -182,3 +163,8 @@ function playGame() {
     }
 
 }
+
+/**
+ * Create a modal that is called up when the 
+ * decide winner function is called and states what you chose what computer chose and the game result
+ */
