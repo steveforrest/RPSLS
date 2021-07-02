@@ -2,7 +2,6 @@
  * Generates a number between 1 and 5 and asigns it to a computer choice for the game
  * @returns 
  */
-setTimeout(() => document.getElementById("video").style.display = "none", 500);
 
 
 function generateComputerChoice() {
@@ -129,7 +128,7 @@ function hideRules() {
     //get modal element
     let modal = document.getElementById("rules-modal");
     //get open modal button
-     let RulesButton = document.getElementById("modal-button");
+    let RulesButton = document.getElementById("modal-button");
     //get close modal button
     let closeModal = document.getElementById("closeModal");
     // get starting state of modal
@@ -144,16 +143,18 @@ function hideRules() {
  * decide winner function is called and states what you chose what computer chose and the game result
  */
 
- function showResult() {
+function showResult() {
 
 
     //get modal element
     let modal = document.getElementById("resultsModal");
-  
+
     // get starting state of modal
     let startingStateModal = getComputedStyle(modal).getPropertyValue('display');
 
-    modal.style.display = "block";
+ 
+        modal.style.display = "block";
+ 
 
 
 
@@ -164,7 +165,7 @@ function hideResult() {
 
     //get modal element
     let modal = document.getElementById("resultsModal");
-  
+
     // get starting state of modal
     let startingStateModal = getComputedStyle(modal).getPropertyValue('display');
 

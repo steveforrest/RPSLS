@@ -1,4 +1,4 @@
-3* {
+* {
     padding: 0;
     border: 0;
     margin: 0;
@@ -49,50 +49,11 @@ li {
     padding: 0 0 0 5rem;
 }
 
-/* code for style of game rules 
-
-.container1 {
-    display: none;
-    grid-template-columns: repeat(5, 50px);
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 0.5rem 5px;
-    justify-content: space-evenly;
-}
-
-.item-border1 {
-    border: 3px solid yellow;
-    padding: 0rem;
-    font-size: 0.5rem;
-}
-
-.item-border2 {
-    border: 3px solid blue;
-    padding: 0rem;
-    font-size: 0.5rem;
-}
-
-.item-border3 {
-    border: 3px solid green;
-    padding: 0rem;
-    font-size: 0.5rem;
-}
-
-.item-border4 {
-    border: 3px solid red;
-    padding: 0rem;
-    font-size: 0.5rem;
-}
-
-.item-border5 {
-    border: 3px solid orange;
-    padding: 0rem;
-    font-size: 0.5rem;
-}*/
 
 /* buttons styles  */
 
 #container2 {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(5, 50px);
     grid-template-rows: auto auto 25px auto;
     grid-gap: 0.5rem 5px;
@@ -105,10 +66,6 @@ li {
 }
 
 .rock-btn {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
     color: rgba(0, 0, 255, 1);
 }
 
@@ -117,11 +74,7 @@ li {
 }
 
 .paper-btn {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    color: rgba(0, 128, 0, 1);
+     color: rgba(0, 128, 0, 1);
     
 }
 
@@ -131,10 +84,6 @@ li {
 }
 
 .scissor-btn {
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 3;
     color: rgb(255, 255, 0, 1);
 }
 
@@ -143,10 +92,7 @@ li {
 }
 
 .lizard-btn {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
+
     color: rgba(255, 0, 0, 1);
     
 }
@@ -180,33 +126,6 @@ li {
     
 }
 
-#grid-item-1{
-    grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-#grid-item-2{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-#grid-item-3{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-#grid-item-4{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
 
 #numOfWins {
     text-align: center;
@@ -260,7 +179,10 @@ li {
     align-items: center;
 }
 
-
+#video{
+    height: 315px;
+    width: 560px;
+}
 .close-button{
     color: #ccc;
     float: right;
@@ -300,6 +222,11 @@ li {
 
 }
 
+#flex-game-result{
+display: flex;
+justify-content: center;
+}
+
 /*play game brings up the game icons controls and score */
 
 #playGame {
@@ -313,7 +240,8 @@ li {
 #hero-img {
     display: flex;
     justify-content: center;
-    margin: 30px;
-    height: 600px;
+    margin: 30px auto;
+    height: auto;
+    width: 500px;
    
 }

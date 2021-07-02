@@ -21,7 +21,7 @@
         <button class="gameButton rules" onclick="showRules()" id="modal-button">Rules</button>
     </section>
 
- 
+
     <!-- modal content to be used with rules button-->
 
     <section id="rules-modal" class="modal">
@@ -47,14 +47,16 @@
         <img src="assets/images/RPSLSHeroImage.jpg" alt="">
     </section>
 
-<!--Radio buttons so you can decide 1 game best 2 out of 3 or best 3 out of 5-->
+    <!--Radio buttons so you can decide 1 game best 2 out of 3 or best 3 out of 5-->
 
     <section id="chooseWins">
-        <p id="numOfWins grid-item-1">How many games do you need to win to be overall winner?</p>
-
-        <label for="select1"><input id="select1 grid-item-2" type="radio" name="wins" checked>One game</label>
-        <label for="select2"><input id="select2 grid-item-3" class="howManyWins" type="radio" name="wins">best 2 out of 3 games</label>
-        <label for="select3"><input id="select3 grid-item-4" type="radio" name="wins">best 3 out of 5 games</label>
+        <p id="numOfWins">How many games do you need to win to be overall winner?</p>
+        <div>
+            <label for="select1"><input id="select1" type="radio" name="wins" checked>One game</label>
+            <label for="select2"><input id="select2" class="howManyWins" type="radio" name="wins">best 2 out of 3
+                games</label>
+            <label for="select3"><input id="select3" type="radio" name="wins">best 3 out of 5 games</label>
+        </div>
     </section>
 
     <section id="container2">
@@ -74,23 +76,25 @@
     </section>
 
     <!-- modal to show users choice computers choice and result -->
-<section class="modal" id="resultsModal">
-    <div class="modal-content">
-        
-        <p>`You chose ${}`</p>
+    <section class="modal" id="resultsModal">
+        <div class="modal-content">
+            <div id="flex-game-result">
+                <p>`You chose ${}`</p>
+                <p>game result was</p>
+                <p>computer chose</p>
+            </div>
+            <button class="close-button gameButton" onclick="hideResult()">Ok</button>
+        </div>
 
-        <button class="close-button gameButton" onclick="hideResult()">Ok</button>
-    </div>
+    </section>
 
-</section>
 
-    <script src="assets/js/script.js"></script>
 
     <footer>
 
 
     </footer>
-
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
