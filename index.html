@@ -18,7 +18,6 @@
 
 
     <section class="gameButtonFlex">
-        <button class="gameButton rules" onclick="playGame()">Play Game</button>
         <button class="gameButton rules" onclick="showRules()" id="modal-button">Rules</button>
     </section>
 
@@ -28,7 +27,7 @@
     <section id="rules-modal" class="modal">
         <div class="rules-modal-content">
 
-            <span class="close-button"  id="closeModal">&times;</span>
+            <span class="close-button" onclick="hideRules()" id="closeModal">&times;</span>
             <section id="rulesImg">
                 <img src="assets/images/1e9ae22826a47a2d2e9f0e8f0f0cdf21a8479715 (1).jpeg" alt="">
             </section>
@@ -77,8 +76,10 @@
     <!-- modal to show users choice computers choice and result -->
 <section class="modal" id="resultsModal">
     <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <p>Is this working?</p>
+        
+        <p>`You chose ${}`</p>
+
+        <button class="close-button gameButton" onclick="hideResult()">Ok</button>
     </div>
 
 </section>

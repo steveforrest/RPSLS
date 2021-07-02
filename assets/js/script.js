@@ -1,4 +1,3 @@
-
 /**
  * Generates a number between 1 and 5 and asigns it to a computer choice for the game
  * @returns 
@@ -112,7 +111,7 @@ function showRules() {
     //get modal element
     let modal = document.getElementById("rules-modal");
     //get open modal button
-    // let RulesButton = document.getElementsByID("modal-button");
+    let RulesButton = document.getElementById("modal-button");
     //get close modal button
     let closeModal = document.getElementById("closeModal");
 
@@ -130,7 +129,7 @@ function hideRules() {
     //get modal element
     let modal = document.getElementById("rules-modal");
     //get open modal button
-     let RulesButton = document.getElementsByID("modal-button");
+     let RulesButton = document.getElementById("modal-button");
     //get close modal button
     let closeModal = document.getElementById("closeModal");
     // get starting state of modal
@@ -155,6 +154,21 @@ function hideRules() {
     let startingStateModal = getComputedStyle(modal).getPropertyValue('display');
 
     modal.style.display = "block";
+
+
+
+}
+
+function hideResult() {
+
+
+    //get modal element
+    let modal = document.getElementById("resultsModal");
+  
+    // get starting state of modal
+    let startingStateModal = getComputedStyle(modal).getPropertyValue('display');
+
+    modal.style.display = "none";
 
 
 
