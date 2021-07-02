@@ -65,6 +65,9 @@ function decideWinner(userChoice) {
 
     console.log(userChoice);
     console.log(comChoice);
+
+    const whatUserChose = userChoice;
+    const whatComputerChose = comChoice
 }
 
 
@@ -173,4 +176,8 @@ function hideResult() {
 
 
 
+}
+
+function userChose(){
+    
 }
