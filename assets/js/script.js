@@ -34,39 +34,39 @@ function decideWinner(userChoice) {
 
     if (userChoice === comChoice) {
         console.log("game drew");
-        let result = 'You Drew!'
+        let result = 'Draw!'
         showResult();
     } else {
         if (userChoice === "Rock" && (comChoice == "Scissors" || comChoice == "Lizard")) {
-            console.log("you win")
+            console.log("Win!")
             incrementScore();
             showResult();
-            result = 'You Win!'
+            result = 'Win!'
         } else if (userChoice === "Paper" && (comChoice == "Rock" || comChoice == "Spock")) {
             console.log("you win")
             incrementScore();
             showResult();
-            result = 'You Win!'
+            result = 'Win!'
         } else if (userChoice === "Scissors" && (comChoice == "Paper" || comChoice == "Lizard")) {
             console.log("you win")
             incrementScore();
             showResult();
-            result = 'You Win!'
+            result = 'Win!'
         } else if (userChoice === "Lizard" && (comChoice == "Spock" || comChoice == "Paper")) {
             console.log("you win")
             incrementScore();
             showResult();
-            result = 'You Win!'
+            result = 'Win!'
         } else if (userChoice === "Spock" && (comChoice == "Scissors" || comChoice == "Rock")) {
             console.log("you win")
             incrementScore();
             showResult();
-            result = 'You Win!'
+            result = 'Win!'
         } else {
             console.log("you lose")
             incrementLoss();
             showResult();
-            result = 'You Lost!'
+            result = 'Loss!'
         }
     }
 
