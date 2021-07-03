@@ -9,7 +9,7 @@
 5. Visuals
 6. How to Use The Game
 7. Roadmap
-8. [Bugs](##-bugs)
+[Bugs](##-bugs)
 9. Credits
 10. Licence
 11. Project status
