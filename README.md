@@ -2,8 +2,8 @@
 
 ## Contents
 
-1. Contents
-2. Name
+1. [link Contents](https://amber-shrew-9r003ltv.ws-eu10.gitpod.io/ "Contents")Contents
+2. [link Name](https://amber-shrew-9r003ltv.ws-eu10.gitpod.io/ "Name")Contents
 3. Description
 4. Badges
 5. Visuals
@@ -27,12 +27,18 @@ This game is much like the well know rock paper scissors but there are two extra
 ## Visuals
 
 1. ![imagename](assets/images/responsiveness.png)
+---
 
 2. ![imagename](assets/images/rulesImg.jpeg)
+---
 
 3. ![imagename](assets/images/RPSLSHeroImage.jpg)
 
+
 ## How to Use The Game
+
+1. there is a rules button that allows you to have a modal open displaying an image with the rules on and a video with rules on.
+2. 
 
 ## Roadmap
 
@@ -40,9 +46,9 @@ This game is much like the well know rock paper scissors but there are two extra
 
 1. while writing the site i noticed an issue between clicking play game and Rules buttons where one would not replace the other instead they would stack on top of each other.
 
-2. Video wont display on modal
+2. Video wont display on modal - This was caused by a rogue line of code in the Java Script setting the display of the video to none.
 
-3. modal wont close when button is clicked
+3. Modal wont close when button is clicked - This was caused by several typos when resolved the modals closed as intended.
 
 ## Credits
 
