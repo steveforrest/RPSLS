@@ -2,14 +2,14 @@
 
 ## Contents
 
-1. [Contents -
-2. [Name]
+1. [Contents](##-Contents)
+2. [Name](##-Name)
 3. Description
 4. Badges
 5. Visuals
 6. How to Use The Game
 7. Roadmap
-8. Bugs
+8. [Bugs](##-Bugs)
 9. Credits
 10. Licence
 11. Project status
