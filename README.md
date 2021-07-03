@@ -26,9 +26,11 @@ This game is much like the well know rock paper scissors but there are two extra
 
 ## Visuals
 
-![imagename](assets/images/rulesImg.jpeg)
+1. ![imagename](assets/images/responsiveness.png)
 
-![imagename](assets/images/RPSLSHeroImage.jpg)
+2. ![imagename](assets/images/rulesImg.jpeg)
+
+3. ![imagename](assets/images/RPSLSHeroImage.jpg)
 
 ## How to Use The Game
 
