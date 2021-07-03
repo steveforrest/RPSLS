@@ -191,13 +191,19 @@ function hideResult() {
 
 function userChose(whatUserChose) {
     console.log(whatUserChose)
+    const usersChoice = document.getElementById("user-chose");
+    usersChoice.innerHTML = whatUserChose;
 }
 
 
 function gameResult(gameResult){
     console.log(result)
+    const gameEnded = document.getElementById("game-result");
+    gameEnded.innerHTML = gameResult;
 }
 
 function computerChose(computerChose) {
     console.log(comChoice)
+    const computersChoice = document.getElementById("computer-chose");
+    computersChoice.innerHTML = computerChose;
 }
