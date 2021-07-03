@@ -34,40 +34,53 @@ function decideWinner(userChoice) {
 
     if (userChoice === comChoice) {
         console.log("game drew");
+        let result = 'You Drew!'
         showResult();
     } else {
         if (userChoice === "Rock" && (comChoice == "Scissors" || comChoice == "Lizard")) {
             console.log("you win")
             incrementScore();
             showResult();
+            result = 'You Win!'
         } else if (userChoice === "Paper" && (comChoice == "Rock" || comChoice == "Spock")) {
             console.log("you win")
             incrementScore();
             showResult();
+            result = 'You Win!'
         } else if (userChoice === "Scissors" && (comChoice == "Paper" || comChoice == "Lizard")) {
             console.log("you win")
             incrementScore();
             showResult();
+            result = 'You Win!'
         } else if (userChoice === "Lizard" && (comChoice == "Spock" || comChoice == "Paper")) {
             console.log("you win")
             incrementScore();
             showResult();
-        } else if (userChoice === "Spock" && (comChoice == "Scissors" || Comment == "Rock")) {
+            result = 'You Win!'
+        } else if (userChoice === "Spock" && (comChoice == "Scissors" || comChoice == "Rock")) {
             console.log("you win")
             incrementScore();
             showResult();
+            result = 'You Win!'
         } else {
             console.log("you lose")
             incrementLoss();
             showResult();
+            result = 'You Lost!'
         }
     }
 
     console.log(userChoice);
     console.log(comChoice);
+    console.log('endof decideWinner');
 
-    const whatUserChose = userChoice;
-    const whatComputerChose = comChoice
+
+    userChose(userChoice);
+    gameResult(result);
+    computerChose(comChoice);
+
+    return result;
+
 }
 
 
@@ -155,11 +168,9 @@ function showResult() {
     // get starting state of modal
     let startingStateModal = getComputedStyle(modal).getPropertyValue('display');
 
- 
-        modal.style.display = "block";
-        userChose()
 
-
+    modal.style.display = "block";
+    userChose()
 
 }
 
@@ -178,8 +189,15 @@ function hideResult() {
 
 }
 
-function userChose(whatUserChose){
+function userChose(whatUserChose) {
     console.log(whatUserChose)
 }
 
-userChose()
+
+function gameResult(gameResult){
+    console.log(result)
+}
+
+function computerChose(computerChose) {
+    console.log(comChoice)
+}

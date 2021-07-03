@@ -2,8 +2,8 @@
 
 ## Contents
 
-1. [link Contents](https://amber-shrew-9r003ltv.ws-eu10.gitpod.io/ "Contents")Contents
-2. [link Name](https://amber-shrew-9r003ltv.ws-eu10.gitpod.io/ "Name")Contents
+1. [Contents -
+2. [Name]
 3. Description
 4. Badges
 5. Visuals
