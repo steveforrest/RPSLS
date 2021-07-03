@@ -157,7 +157,7 @@ function showResult() {
 
  
         modal.style.display = "block";
- 
+        userChose()
 
 
 
@@ -178,6 +178,8 @@ function hideResult() {
 
 }
 
-function userChose(){
-    
+function userChose(whatUserChose){
+    console.log(whatUserChose)
 }
+
+userChose()
