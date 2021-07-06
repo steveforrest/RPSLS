@@ -261,3 +261,9 @@ li {
     width: 500px;
 
 }
+/* modal for game over and resetting */
+#gamneOvermodal{
+        display: none;
+        justify-content: space-evenly;
+        font-size: 20px;
+}

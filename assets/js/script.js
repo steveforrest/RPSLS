@@ -170,7 +170,6 @@ function hideResult() {
     let modal = document.getElementById("resultsModal");
 
     // get starting state of modal
-    let startingStateModal = getComputedStyle(modal).getPropertyValue('display');
 
     modal.style.display = "none";
 
@@ -186,7 +185,7 @@ function userChose(whatUserChose) {
 }
 
 
-function gameResult(gameResult){
+function gameResult(gameResult) {
     console.log('gameResult from gameResult function = ' + gameResult)
     const gameEnded = document.getElementById("game-result");
     gameEnded.innerHTML = gameResult;
@@ -194,23 +193,52 @@ function gameResult(gameResult){
 }
 
 function computerChose(computerChose) {
-    console.log('computerChose form the computerChose function ' + computerChose)
+    console.log('computerChose from the computerChose function ' + computerChose)
     const computersChoice = document.getElementById("computer-chose");
     computersChoice.innerHTML = computerChose;
 }
- /**
-  * will reset the score when called
-  */
-function resetScore(){
+/**
+ * will reset the score when called
+ */
+function resetScore() {
     const scored = document.getElementById(score);
     scored.innerHTML = '0';
 }
-
-
- /**
-  * will reset the score when called
-  */
-  function resetLoss(){
+/**
+ * will reset the score when called
+ */
+function resetLoss() {
     const lost = document.getElementById(score);
     lost.innerHTML = '0';
+}
+/**
+ * reset game resets player and computers score and closes the gameOver modal
+ */
+function resetGame() {
+    resetScore();
+    resetLoss();
+    hideGameOverModal();
+}
+/** Hide gameOverModal*/
+function hideGameOverModal() {
+    //get modal element
+    let modalGameOver = document.getElementById("gameOverModal");
+    // get starting state of modal
+    let startingStateModal = getComputedStyle(modal).getPropertyValue('display');
+    modalGameOver.style.display = "none";
+}
+/** Show gameOverModal*/
+function showGameOverModal() {
+    //get modal element
+    let modalGameOver = document.getElementById("gameOverModal");
+    // get starting state of modal
+    modalGameOver.style.display = "flex";
+}
+/* check scores*/
+function checkScores(){
+    const lost = document.getElementById(score);
+    const scored = document.getElementById(score);
+    if(lost === 5 ||scored === 5){
+        showGameOverModal()
+    }
 }

@@ -29,7 +29,7 @@
 
             <span class="close-button" onclick="hideRules()" id="closeModal">&times;</span>
             <section id="rulesImg">
-                <img src="assets/images/rulesImg.jpeg" alt="">            </section>
+                <img src="assets/images/rulesImg.jpeg" alt=""> </section>
 
             <!-- Video to explain rules-->
             <section id="video">
@@ -46,19 +46,8 @@
         <img src="assets/images/RPSLSHeroImage.jpg" alt="">
     </section>
 
-    <!--Radio buttons so you can decide 1 game best 2 out of 3 or best 3 out of 5-->
-
-    <section id="chooseWins">
-        <p id="numOfWins">How many games do you need to win to be overall winner?</p>
-        <div>
-            <label for="select1"><input id="select1" type="radio" name="wins" checked>One game</label>
-            <label for="select2"><input id="select2" class="howManyWins" type="radio" name="wins">best 2 out of 3
-                games</label>
-            <label for="select3"><input id="select3" type="radio" name="wins">best 3 out of 5 games</label>
-        </div>
-    </section>
-
-    <section id="container2">
+    <!--Buttons that collects what the user chose-->
+     <section id="container2">
         <button onclick="decideWinner('Paper')" class="paper-btn iconButton"><i class="fas fa-hand-paper"></i></button>
         <button onclick="decideWinner('Lizard')" class="lizard-btn iconButton"><i
                 class="fas fa-hand-lizard"></i></button>
@@ -86,11 +75,15 @@
             </div>
             <button class="close-button gameButton" onclick="hideResult()">Ok</button>
         </div>
-
     </section>
-
-
-
+    <section class="modal" id="gameOverModal">
+        <div class="modal-content">
+            <div id="flex-game-over">
+              <p>GAME OVER</p>
+            </div>
+            <button class="close-button gameButton" onclick="resetGame()">Ok</button>
+        </div>
+    </section>
     <footer>
 
 
