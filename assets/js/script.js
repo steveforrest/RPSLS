@@ -1,3 +1,4 @@
+
 /**
  * Generates a number between 1 and 5 and asigns it to a computer choice for the game
  */
@@ -123,6 +124,7 @@ function hideResult() {
     // get starting state of modal
     modal.style.display = "none";
     checkScores();
+
 }
 function userChose(whatUserChose) {
     console.log('whatUserChose from with userChose function = ' + whatUserChose)
