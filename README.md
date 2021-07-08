@@ -10,10 +10,11 @@
 6. [How to Use The Game](#how-to-play-the-game)
 7. [Testing](#testing)
 6. [Bugs](#bugs)
-9. [Credits](#credits)
-10. [Deployment](#deployment)
-11. [Licence](#licence)
-12. [Project status](#project-status)
+9. [Technologies](#technologies)
+10. [Credits](#credits)
+11. [Deployment](#deployment)
+12. [Licence](#licence)
+13. [Project status](#project-status)
 
 ## Name
 
@@ -25,9 +26,6 @@ Have you ever needed a way to decide something, feel a flip of a coin is too cli
 A simple design that allows you to see the rules in 2 different forms (an image or video), five buttons that allow you to make your selection for the game, a simplae score board and a modal tht will pop up to tell you the outcome of the game aloows quick and easy to understand way of playing.
 
 ![imagename](assets/images/responsiveness.png)
-
-
-## Badges
 
 ## Features
 
@@ -56,7 +54,21 @@ Each time a game is won or lost the corresponding increment function will be cal
 
 ## Testing
 
-## Bugs
+How i have tested the code:
+* I have checked each of the buttons ensuring they give the desired outcome.
+* I have console logged each of the outtcome at verious stages and compared the outcomes.
+* I have tested the rules button several times, upon clicking it the rules image and video would appear clicking the x closed the modal.
+* I tested the game by clicking the first button (paper)
+* I checked the out come of what the modal said to ensure it was as it should be.
+* I checked that each time the player chose something and that the game was either a win or a loss one of the scores would be incremented.
+* I clicked the ok button which closed the modal.
+* I then repeated to click on the paper icon, check the outcome enetered in the modal and click on the ok button to close the modal untill either of the scores reached 5. 
+* I checked that when one of the scores reached 5 and the results modal was closed tht the game over modal would display.
+* I then clicked reset and checked that the scores were reset to 0.
+* I repeated these steps 3 times.
+I then repeated the above steps for all of the other buttons.
+
+### Bugs
 
 1. while writing the site i noticed an issue between clicking play game and Rules buttons where one would not replace the other instead they would stack on top of each other.
 
@@ -64,9 +76,11 @@ Each time a game is won or lost the corresponding increment function will be cal
 
 3. Modal wont close when button is clicked - This was caused by several typos when resolved the modals closed as intended.
 
+### Validaation
+
+## Deployment
+
 ## Credits
-
-
 
 ## Licence
 
