@@ -24,6 +24,7 @@ RPSLS - or better known as Rock Paper Scissors Lizard Spock
 
 Have you ever needed a way to decide something, feel a flip of a coin is too cliche or rock paper scissors is too easy to just have a draw game? Then look no further, Rock Paper Scissors Lizard Spock allows you a first to 5 way of deciding what ever youd like or just play for fun or to pass the time.
 A simple design that allows you to see the rules in 2 different forms (an image or video), five buttons that allow you to make your selection for the game, a simplae score board and a modal tht will pop up to tell you the outcome of the game aloows quick and easy to understand way of playing.
+This game is made with bright primary colours with children in mind.
 
 ![imagename](assets/images/responsiveness.png)
 
