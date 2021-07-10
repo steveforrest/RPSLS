@@ -77,7 +77,7 @@ I then repeated the above steps for all of the other buttons.
 
 3. Modal wont close when button is clicked - This was caused by several typos when resolved the modals closed as intended.
 
-### Validaation
+### Validation
 
 ## Deployment
 

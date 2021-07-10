@@ -8,65 +8,62 @@ header {
     background: rgba(0, 160, 255);
     padding: 3rem 0;
 }
-
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-
 footer {
     background: rgba(0, 160, 255);
     padding: 3rem 0;
     width: 100%;
     margin-top: auto;
+    display: flex;
+    justify-content: space-around;
 }
-
+footer>a{
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+  }
 #gameDiscription {
     padding: 3rem 2rem;
 }
-
 h1 {
     text-align: center;
     color: white;
 }
-
 p {
     font-size: 0.75rem;
     text-align: center;
     padding: 1rem;
 }
-
 ul {
     padding: 1rem 0;
 
 }
-
 li {
     font-size: 0.5rem;
     padding: 0 0 0 5rem;
 }
-
 /* buttons styles  */
-
 #container2 {
     display: flex;
     justify-content: space-evenly;
     margin: 3rem 3rem 0;
 }
-
 .iconButton {
     font-size: 3rem;
+    background-color: white;
 }
-
 .rock-btn {
     color: rgba(0, 0, 255, 1);
 }
-
 .rock-btn:hover {
     color: rgba(0, 0, 255, 0.6)
 }
-
 .paper-btn {
     color: rgba(0, 128, 0, 1);
 

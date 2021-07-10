@@ -90,7 +90,7 @@ function incrementLoss() {
  */
 function showRules() {
     //get modal element
-    let modal = document.getElementById("rules-modal");
+    const modal = document.getElementById("rules-modal");
     //get open modal button
     //get close modal button
     // get starting state of modal
@@ -101,7 +101,7 @@ function showRules() {
  */
 function hideRules() {
     //get modal element
-    let modal = document.getElementById("rules-modal");
+    const modal = document.getElementById("rules-modal");
     //get open modal button
     //get close modal button
     // get starting state of modal
@@ -113,14 +113,14 @@ function hideRules() {
  */
 function showResult() {
     //get modal element
-    let modal = document.getElementById("resultsModal");
+    const modal = document.getElementById("resultsModal");
     // get starting state of modal
     modal.style.display = "block";
     userChose()
 }
 function hideResult() {
     //get modal element
-    let modal = document.getElementById("resultsModal");
+    const modal = document.getElementById("resultsModal");
     // get starting state of modal
     modal.style.display = "none";
     checkScores();
@@ -167,13 +167,13 @@ function resetGame() {
 /** Hide gameOverModal*/
 function hideGameOverModal() {
     //get modal element
-    let modalGameOver = document.getElementById("gameOverModal");
+    const modalGameOver = document.getElementById("gameOverModal");
     modalGameOver.style.display = "none";
 }
 /** Show gameOverModal*/
 function showGameOverModal() {
     //get modal element
-    let modalGameOver = document.getElementById("gameOverModal");
+    const modalGameOver = document.getElementById("gameOverModal");
     // get starting state of modal
     modalGameOver.style.display = "flex";
 }
