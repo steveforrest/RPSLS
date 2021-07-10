@@ -81,6 +81,13 @@ I then repeated the above steps for all of the other buttons.
 
 ## Deployment
 
+1. Go to https://github.com/
+2. Select the correct repositry
+3. Click settings
+4. Click pages
+5. Select source and choose master
+6. Your sites path will now be shown
+
 ## Credits
 
 ## Licence
