@@ -2,19 +2,16 @@
 
 ## Contents
 
-1. [Contents](#contents)
-2. [Name](#name)
-3. [Description](#discription)
-4. [Badges](#badges)
-5. [Features](#features)
-6. [How to Use The Game](#how-to-play-the-game)
-7. [Testing](#testing)
-6. [Bugs](#bugs)
-9. [Technologies](#technologies)
-10. [Credits](#credits)
-11. [Deployment](#deployment)
-12. [Licence](#licence)
-13. [Project status](#project-status)
+* [Contents](#contents)
+* [Name](#name)
+* [Description](#discription)
+* [Badges](#badges)
+* [Features](#features)
+* [How to Use The Game](#how-to-play-the-game)
+* [Testing](#testing)
+* [Technologies](#technologies)
+* [Deployment](#deployment)
+* [Future Additions](#future-additions)
 
 ## Name
 
@@ -80,13 +77,20 @@ I then repeated the above steps for all of the other buttons.
 3. Modal wont close when button is clicked - This was caused by several typos when resolved the modals closed as intended.
 
 ### Validation
+
 * HTML - No errors returned from [w3C validator](https://validator.w3.org/nu/#textarea)
 * CSS -
 * JavaScript - No errors were returned from [JS Hint](https://jshint.com/), the metrics were as follows :-
     * There are 17 functions in this file.
-        *  Function with the largest signature take 1 arguments, while the median is 0.
+        * Function with the largest signature take 1 arguments, while the median is 0.
         * Largest function has 28 statements in it, while the median is 2.
         * The most complex function has a cyclomatic complexity value of 17 while the median is 1.
+
+## Technologies
+
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ## Deployment
 
@@ -97,4 +101,20 @@ I then repeated the above steps for all of the other buttons.
 5. Select source and choose master
 6. Your sites path will now be shown
 
+### Cloning
 
+How to clone this repositiory. [How to clone a github repositry](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
+
+* On GitHub go to the main page of the Repository.
+* Above the list of files click the code button with the drop down arrow.
+* To clone the repository using HTTPS, under "Clone with HTTPS", click on the clipboard.
+* Open the Git Bash ternimal.
+* Change the current working directory to the location where you want the cloned directory.
+* Type git clone, and then paste the URL you copied earlier from step 3.
+* Press Enter to create your local clone.
+
+## Future Additions
+
+In future addition i would like to add :-
+* different themes to allow the user to change the way the game is displayed for example paper would be the default theme scissors would be  metalic thems spock would be a sci-fi them etc. for example the spock one would have a sci-fi back ground all together darker with.
+* I would like to add an ability to play against other people.
