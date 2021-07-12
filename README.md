@@ -78,8 +78,8 @@ I then repeated the above steps for all of the other buttons.
 ### Validation
 
 * HTML - No errors returned from [w3C validator](https://validator.w3.org/nu/#textarea)
-* CSS -
-* JavaScript - No errors were returned from [JS Hint](https://jshint.com/), the metrics were as follows :-
+* CSS - No errors found from [JigSaw](https://jigsaw.w3.org/css-validator/validator)
+* JavaScript - No errors were returned from [JS Hint](https://jshint.com/), 5 unused variables are found but these are due to the onclicks being used within the html, the metrics were as follows :-
     * There are 17 functions in this file.
         * Function with the largest signature take 1 arguments, while the median is 0.
         * Largest function has 28 statements in it, while the median is 2.
