@@ -30,6 +30,8 @@ This game is made with bright primary colours with children in mind.
 
 ## Features
 
+This game is aimed at a younger demographic and so i chose to use bright colours in order to best attract them to the game. I opted to use the default font family as this will be safest for any browser and clear enough so as not to confuse children when reading it.
+
 ### Rules
 
 The rules will be displayed using two different media types an image for quick reference or an embedded you tube extract from the big bang theory to better explain the game.
@@ -78,6 +80,13 @@ I then repeated the above steps for all of the other buttons.
 3. Modal wont close when button is clicked - This was caused by several typos when resolved the modals closed as intended.
 
 ### Validation
+* HTML - No errors returned from [w3C validator](https://validator.w3.org/nu/#textarea)
+* CSS -
+* JavaScript - No errors were returned from [JS Hint](https://jshint.com/), the metrics were as follows :-
+    * There are 17 functions in this file.
+        *  Function with the largest signature take 1 arguments, while the median is 0.
+        * Largest function has 28 statements in it, while the median is 2.
+        * The most complex function has a cyclomatic complexity value of 17 while the median is 1.
 
 ## Deployment
 
@@ -88,9 +97,4 @@ I then repeated the above steps for all of the other buttons.
 5. Select source and choose master
 6. Your sites path will now be shown
 
-## Credits
-
-## Licence
-
-## Project status
 
