@@ -4,10 +4,9 @@
 
 * [Contents](#contents)
 * [Name](#name)
-* [Description](#discription)
-* [Badges](#badges)
+* [Description](#description)
 * [Features](#features)
-* [How to Use The Game](#how-to-play-the-game)
+* [Game Play](#game-play)
 * [Testing](#testing)
 * [Technologies](#technologies)
 * [Deployment](#deployment)
@@ -118,3 +117,10 @@ How to clone this repositiory. [How to clone a github repositry](https://docs.gi
 In future addition i would like to add :-
 * different themes to allow the user to change the way the game is displayed for example paper would be the default theme scissors would be  metalic thems spock would be a sci-fi them etc. for example the spock one would have a sci-fi back ground all together darker with.
 * I would like to add an ability to play against other people.
+
+## Citations
+
+* [YouTube clip of explaining game - Wozamil](https://www.youtube.com/watch?v=x5Q6-wMx-K8&t=11s)
+* [Rock, paper, scissors, lizard spock rules diagram](https://www.seekpng.com/ipng/u2q8u2a9q8a9t4r5_play-rock-paper-scissors-lizard-spock/)
+* [Font Awesome](https://fontawesome.com/)
+* [Hero image taken from homy shirt](https://homyshirt.com/en/rock/6797-t-shirt-rock-paper-scissors-lizard-black-spock-sublimation.html)

@@ -27,33 +27,33 @@ function decideWinner(userChoice) {
     let comChoice = generateComputerChoice();
     let result;
     if (userChoice === comChoice) {
-        result = 'Draw!'
+        result = 'Draw!';
         showResult();
     } else {
         if (userChoice === "Rock" && (comChoice == "Scissors" || comChoice == "Lizard")) {
             incrementScore();
             showResult();
-            result = 'Win!'
+            result = 'Win!';
         } else if (userChoice === "Paper" && (comChoice == "Rock" || comChoice == "Spock")) {
             incrementScore();
             showResult();
-            result = 'Win!'
+            result = 'Win!';
         } else if (userChoice === "Scissors" && (comChoice == "Paper" || comChoice == "Lizard")) {
             incrementScore();
             showResult();
-            result = 'Win!'
+            result = 'Win!';
         } else if (userChoice === "Lizard" && (comChoice == "Spock" || comChoice == "Paper")) {
             incrementScore();
             showResult();
-            result = 'Win!'
+            result = 'Win!';
         } else if (userChoice === "Spock" && (comChoice == "Scissors" || comChoice == "Rock")) {
             incrementScore();
             showResult();
-            result = 'Win!'
+            result = 'Win!';
         } else {
             incrementLoss();
             showResult();
-            result = 'Loss!'
+            result = 'Loss!';
         }
     }
     userChose(userChoice);
@@ -106,7 +106,7 @@ function showResult() {
     const modal = document.getElementById("resultsModal");
     // get starting state of modal
     modal.style.display = "block";
-    userChose()
+    userChose();
 }
 function hideResult() {
     //get modal element
@@ -167,6 +167,6 @@ function checkScores() {
     const lost = document.getElementById('loss');
     const scored = document.getElementById('score');
     if (lost.innerText >= 5 || scored.innerText >= 5) {
-        showGameOverModal()
+        showGameOverModal();
     }
 }
