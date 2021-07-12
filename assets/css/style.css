@@ -93,6 +93,7 @@ li {
 /*Score for player and computer*/
 #scores {
     display: flex;
+    margin: 1rem 0;
     justify-content: space-evenly;
 }
 #scores>p {
@@ -112,6 +113,7 @@ li {
     height: fit-content;
     margin: auto;
     padding: 2rem;
+    display:flex 
 }
 .gameButton {
     width: 100%;
@@ -228,9 +230,6 @@ li {
 .iconButton{
     font-size: 4rem;
 }
-    #scores {
-        margin: 2rem 0;
-    }
 
     #instructions>p {
         margin: 0 auto;
