@@ -24,48 +24,38 @@ function generateComputerChoice() {
  * Comapres the user choice from the buttons to the randomly generated computers choice
  */
 function decideWinner(userChoice) {
-    comChoice = generateComputerChoice();
+    let comChoice = generateComputerChoice();
     let result;
     if (userChoice === comChoice) {
-        console.log('Result from game = ' + "game drew");
         result = 'Draw!'
         showResult();
     } else {
         if (userChoice === "Rock" && (comChoice == "Scissors" || comChoice == "Lizard")) {
-            console.log('Result from game = ' + "Win!")
             incrementScore();
             showResult();
             result = 'Win!'
         } else if (userChoice === "Paper" && (comChoice == "Rock" || comChoice == "Spock")) {
-            console.log('Result from game = ' + "you win")
             incrementScore();
             showResult();
             result = 'Win!'
         } else if (userChoice === "Scissors" && (comChoice == "Paper" || comChoice == "Lizard")) {
-            console.log('Result from game = ' + "you win")
             incrementScore();
             showResult();
             result = 'Win!'
         } else if (userChoice === "Lizard" && (comChoice == "Spock" || comChoice == "Paper")) {
-            console.log('Result from game = ' + "you win")
             incrementScore();
             showResult();
             result = 'Win!'
         } else if (userChoice === "Spock" && (comChoice == "Scissors" || comChoice == "Rock")) {
-            console.log('Result from game = ' + "you win")
             incrementScore();
             showResult();
             result = 'Win!'
         } else {
-            console.log('Result from game = ' + "you lose")
             incrementLoss();
             showResult();
             result = 'Loss!'
         }
     }
-    console.log('print out of users choice at end of decide winner function = ' + userChoice);
-    console.log('print out of users choice at end of decide winner function = ' + comChoice);
-    console.log('endof decideWinner');
     userChose(userChoice);
     gameResult(result);
     computerChose(comChoice);
@@ -127,20 +117,15 @@ function hideResult() {
 
 }
 function userChose(whatUserChose) {
-    console.log('whatUserChose from with userChose function = ' + whatUserChose)
     const usersChoice = document.getElementById("user-chose");
     usersChoice.innerHTML = whatUserChose;
-    console.log('userschoice = ' + usersChoice);
 }
 
 function gameResult(gameResult) {
-    console.log('gameResult from gameResult function = ' + gameResult)
     const gameEnded = document.getElementById("game-result");
     gameEnded.innerHTML = gameResult;
-    console.log('gameRusult = ' + gameEnded);
 }
 function computerChose(computerChose) {
-    console.log('computerChose from the computerChose function ' + computerChose)
     const computersChoice = document.getElementById("computer-chose");
     computersChoice.innerHTML = computerChose;
 }
@@ -184,6 +169,4 @@ function checkScores() {
     if (lost.innerText >= 5 || scored.innerText >= 5) {
         showGameOverModal()
     }
-    console.log(lost);
-    console.log(scored);
 }
